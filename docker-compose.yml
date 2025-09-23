@@ -30,7 +30,7 @@ services:
       DATABASE_NAME: ${DB_NAME:-medianeg_db}
       DATABASE_USERNAME: ${DB_USER:-medianeg_user}
       DATABASE_PASSWORD: ${DB_PASS:-medianeg_password}
-      DATABASE_SSL: false
+      DATABASE_SSL: "false"
       JWT_SECRET: ${JWT_SECRET:-your-jwt-secret-here}
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-your-admin-jwt-secret-here}
       APP_KEYS: ${APP_KEYS:-your-app-keys-here}
