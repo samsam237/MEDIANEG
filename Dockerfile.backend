@@ -1,0 +1,54 @@
+# Backend Dockerfile pour Strapi
+FROM node:18-alpine AS base
+
+# Install dependencies only when needed
+FROM base AS deps
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+
+# Install dependencies based on the preferred package manager
+COPY backend/package.json ./
+RUN npm install && npm cache clean --force
+
+# Rebuild the source code only when needed
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY backend/ .
+
+# Set environment variables for build
+ENV NODE_ENV=production
+ENV STRAPI_DISABLE_UPDATE_NOTIFICATION=true
+ENV STRAPI_HIDE_STARTUP_MESSAGE=true
+
+# Build Strapi
+RUN npm run build
+
+# Production image, copy all the files and run strapi
+FROM base AS runner
+WORKDIR /app
+
+ENV NODE_ENV production
+
+RUN addgroup --system --gid 1001 strapi
+RUN adduser --system --uid 1001 strapi
+
+# Copy the built application
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/src ./src
+COPY --from=builder /app/config ./config
+
+# Create necessary directories
+RUN mkdir -p public/uploads database/migrations .tmp
+RUN chown -R strapi:strapi public/uploads database .tmp
+
+USER strapi
+
+EXPOSE 1337
+
+ENV HOST 0.0.0.0
+ENV PORT 1337
+
+CMD ["npm", "start"]

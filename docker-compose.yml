@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  # Base de données PostgreSQL
+  database:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-medianeg_db}
+      POSTGRES_USER: ${DB_USER:-medianeg_user}
+      POSTGRES_PASSWORD: ${DB_PASS:-medianeg_password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "6888:5432"
+    networks:
+      - medianeg-network
+
+  # Backend Strapi
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: database
+      DATABASE_PORT: 5432
+      DATABASE_NAME: ${DB_NAME:-medianeg_db}
+      DATABASE_USERNAME: ${DB_USER:-medianeg_user}
+      DATABASE_PASSWORD: ${DB_PASS:-medianeg_password}
+      DATABASE_SSL: false
+      JWT_SECRET: ${JWT_SECRET:-your-jwt-secret-here}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-your-admin-jwt-secret-here}
+      APP_KEYS: ${APP_KEYS:-your-app-keys-here}
+      API_TOKEN_SALT: ${API_TOKEN_SALT:-your-api-token-salt-here}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT:-your-transfer-token-salt-here}
+      HOST: 0.0.0.0
+      PORT: 1337
+    volumes:
+      - strapi_uploads:/app/public/uploads
+      - strapi_data:/app/.tmp
+    ports:
+      - "1337:1337"
+    depends_on:
+      - database
+    networks:
+      - medianeg-network
+
+  # Frontend Next.js
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:1337}
+    ports:
+      - "4000:3000"
+    depends_on:
+      - backend
+    networks:
+      - medianeg-network
+
+volumes:
+  postgres_data:
+    driver: local
+  strapi_uploads:
+    driver: local
+  strapi_data:
+    driver: local
+
+networks:
+  medianeg-network:
+    driver: bridge

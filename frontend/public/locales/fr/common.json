@@ -1,0 +1,130 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "presentation": "Présentation",
+    "actionPlan": "Plan d'action",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "MEDIANEG International",
+    "subtitle": "Médiation et Négociation Internationale",
+    "tagline": "Promouvoir la paix et la résolution des conflits par la médiation et la négociation",
+    "learnMore": "En savoir plus",
+    "getInTouch": "Nous contacter"
+  },
+  "presentation": {
+    "title": "Présentation",
+    "role": "Notre rôle",
+    "neutrality": "Notre neutralité",
+    "commissions": "Nos commissions"
+  },
+  "actionPlan": {
+    "title": "Plan d'action",
+    "timeline": "Chronologie",
+    "currentYear": "Année en cours"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contactez-nous",
+    "address": "Adresse",
+    "email": "Email",
+    "phone": "Téléphone",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l'envoi du message"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "organization": "MEDIANEG International"
+  },
+  "language": {
+    "switch": "Changer de langue"
+  },
+  "features": {
+    "roleDescription": "Promouvoir la paix et la résolution des conflits par la médiation et la négociation internationale.",
+    "neutralityDescription": "Maintenir une position neutre et impartiale dans tous les processus de médiation.",
+    "commissionsDescription": "Coordonner les différentes commissions spécialisées dans la résolution de conflits.",
+    "commitmentsTitle": "Nos engagements",
+    "commitmentsSubtitle": "Découvrez les valeurs et principes qui guident notre action",
+    "missionTitle": "Rejoignez notre mission",
+    "missionDescription": "Ensemble, construisons un monde plus pacifique grâce à la médiation et à la négociation",
+    "contactUs": "Nous contacter"
+  },
+  "presentationPage": {
+    "subtitle": "Découvrez notre mission, nos valeurs et notre approche de la médiation internationale",
+    "missionTitle": "Notre mission",
+    "missionDescription": "Promouvoir la paix et la stabilité internationale par la médiation et la négociation, en respectant les principes de neutralité, d'impartialité et de respect des droits de l'homme."
+  },
+  "actionPlanPage": {
+    "subtitle": "Découvrez notre feuille de route pour promouvoir la paix et la résolution des conflits",
+    "timelineSubtitle": "Notre plan d'action structuré pour les années à venir",
+    "objectivesTitle": "Nos objectifs",
+    "objectivesSubtitle": "Les piliers de notre stratégie d'action",
+    "strategicObjectives": "Objectifs stratégiques",
+    "strategicObjectivesDesc": "Définir et mettre en œuvre des objectifs clairs pour la résolution des conflits internationaux.",
+    "mediatorTraining": "Formation des médiateurs",
+    "mediatorTrainingDesc": "Développer les compétences et l'expertise de nos équipes de médiation.",
+    "operationalPlanning": "Planification opérationnelle",
+    "operationalPlanningDesc": "Organiser et coordonner les interventions sur le terrain de manière efficace.",
+    "currentYearDescription": "Cette année, nous concentrons nos efforts sur le renforcement des capacités de médiation, l'expansion de notre réseau international et l'amélioration de nos processus de résolution de conflits."
+  },
+  "contactPage": {
+    "availability": "Disponible 24h/7j",
+    "hours": "Horaires",
+    "hoursWeekdays": "Lun - Ven: 9h00 - 18h00",
+    "hoursEmergency": "Urgences: 24h/7j",
+    "coordinatesTitle": "Nos coordonnées",
+    "whyContactTitle": "Pourquoi nous contacter ?",
+    "whyContactItems": {
+      "mediation": "• Demande de médiation internationale",
+      "training": "• Formation en résolution de conflits",
+      "partnership": "• Partenariat et collaboration",
+      "general": "• Questions générales",
+      "emergency": "• Urgences diplomatiques"
+    },
+    "locationTitle": "Notre localisation",
+    "locationSubtitle": "Situés au cœur de Paris, nous sommes facilement accessibles",
+    "mapPlaceholder": "Carte interactive (à intégrer avec Google Maps ou OpenStreetMap)"
+  },
+  "quickLinks": "Liens rapides",
+  "placeholders": {
+    "fullName": "Votre nom complet",
+    "emailAddress": "votre@email.com",
+    "messageSubject": "Sujet de votre message",
+    "yourMessage": "Votre message..."
+  },
+  "seo": {
+    "siteName": "MEDIANEG International",
+    "siteDescription": "Organisation internationale de médiation et négociation pour la promotion de la paix et la résolution des conflits",
+    "keywords": "médiation, négociation, paix, conflits, résolution, international, MEDIANEG, diplomatie",
+    "pages": {
+      "home": {
+        "title": "MEDIANEG International - Médiation et Négociation",
+        "description": "Promouvez la paix et la résolution des conflits par la médiation et la négociation internationale avec MEDIANEG",
+        "keywords": "médiation internationale, négociation, paix, résolution conflits, MEDIANEG"
+      },
+      "presentation": {
+        "title": "Présentation - MEDIANEG International",
+        "description": "Découvrez notre mission, nos valeurs et notre approche de la médiation internationale pour promouvoir la paix",
+        "keywords": "présentation MEDIANEG, mission, valeurs, médiation internationale, neutralité"
+      },
+      "actionPlan": {
+        "title": "Plan d'action - MEDIANEG International",
+        "description": "Explorez notre feuille de route stratégique pour promouvoir la paix et la résolution des conflits",
+        "keywords": "plan d'action, stratégie, médiation, résolution conflits, chronologie"
+      },
+      "contact": {
+        "title": "Contact - MEDIANEG International",
+        "description": "Contactez MEDIANEG International pour vos besoins de médiation et négociation. Disponible 24h/7j",
+        "keywords": "contact MEDIANEG, médiation, négociation, urgence diplomatique"
+      }
+    }
+  }
+}

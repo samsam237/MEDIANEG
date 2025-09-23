@@ -1,0 +1,130 @@
+{
+  "navigation": {
+    "home": "Home",
+    "presentation": "About",
+    "actionPlan": "Action Plan",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "MEDIANEG International",
+    "subtitle": "International Mediation and Negotiation",
+    "tagline": "Promoting peace and conflict resolution through mediation and negotiation",
+    "learnMore": "Learn more",
+    "getInTouch": "Get in touch"
+  },
+  "presentation": {
+    "title": "About Us",
+    "role": "Our role",
+    "neutrality": "Our neutrality",
+    "commissions": "Our commissions"
+  },
+  "actionPlan": {
+    "title": "Action Plan",
+    "timeline": "Timeline",
+    "currentYear": "Current year"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "organization": "MEDIANEG International"
+  },
+  "language": {
+    "switch": "Change language"
+  },
+  "features": {
+    "roleDescription": "Promoting peace and conflict resolution through international mediation and negotiation.",
+    "neutralityDescription": "Maintaining a neutral and impartial position in all mediation processes.",
+    "commissionsDescription": "Coordinating various specialized commissions in conflict resolution.",
+    "commitmentsTitle": "Our commitments",
+    "commitmentsSubtitle": "Discover the values and principles that guide our action",
+    "missionTitle": "Join our mission",
+    "missionDescription": "Together, let's build a more peaceful world through mediation and negotiation",
+    "contactUs": "Contact us"
+  },
+  "presentationPage": {
+    "subtitle": "Discover our mission, values and approach to international mediation",
+    "missionTitle": "Our mission",
+    "missionDescription": "Promoting international peace and stability through mediation and negotiation, while respecting the principles of neutrality, impartiality and respect for human rights."
+  },
+  "actionPlanPage": {
+    "subtitle": "Discover our roadmap for promoting peace and conflict resolution",
+    "timelineSubtitle": "Our structured action plan for the coming years",
+    "objectivesTitle": "Our objectives",
+    "objectivesSubtitle": "The pillars of our action strategy",
+    "strategicObjectives": "Strategic objectives",
+    "strategicObjectivesDesc": "Define and implement clear objectives for international conflict resolution.",
+    "mediatorTraining": "Mediator training",
+    "mediatorTrainingDesc": "Develop the skills and expertise of our mediation teams.",
+    "operationalPlanning": "Operational planning",
+    "operationalPlanningDesc": "Organize and coordinate field interventions efficiently.",
+    "currentYearDescription": "This year, we are focusing our efforts on strengthening mediation capacities, expanding our international network and improving our conflict resolution processes."
+  },
+  "contactPage": {
+    "availability": "Available 24/7",
+    "hours": "Hours",
+    "hoursWeekdays": "Mon - Fri: 9:00 AM - 6:00 PM",
+    "hoursEmergency": "Emergencies: 24/7",
+    "coordinatesTitle": "Our coordinates",
+    "whyContactTitle": "Why contact us?",
+    "whyContactItems": {
+      "mediation": "• International mediation request",
+      "training": "• Conflict resolution training",
+      "partnership": "• Partnership and collaboration",
+      "general": "• General questions",
+      "emergency": "• Diplomatic emergencies"
+    },
+    "locationTitle": "Our location",
+    "locationSubtitle": "Located in the heart of Paris, we are easily accessible",
+    "mapPlaceholder": "Interactive map (to be integrated with Google Maps or OpenStreetMap)"
+  },
+  "quickLinks": "Quick links",
+  "placeholders": {
+    "fullName": "Your full name",
+    "emailAddress": "your@email.com",
+    "messageSubject": "Subject of your message",
+    "yourMessage": "Your message..."
+  },
+  "seo": {
+    "siteName": "MEDIANEG International",
+    "siteDescription": "International mediation and negotiation organization for promoting peace and conflict resolution",
+    "keywords": "mediation, negotiation, peace, conflicts, resolution, international, MEDIANEG, diplomacy",
+    "pages": {
+      "home": {
+        "title": "MEDIANEG International - Mediation and Negotiation",
+        "description": "Promote peace and conflict resolution through international mediation and negotiation with MEDIANEG",
+        "keywords": "international mediation, negotiation, peace, conflict resolution, MEDIANEG"
+      },
+      "presentation": {
+        "title": "About Us - MEDIANEG International",
+        "description": "Discover our mission, values and approach to international mediation for promoting peace",
+        "keywords": "MEDIANEG about, mission, values, international mediation, neutrality"
+      },
+      "actionPlan": {
+        "title": "Action Plan - MEDIANEG International",
+        "description": "Explore our strategic roadmap for promoting peace and conflict resolution",
+        "keywords": "action plan, strategy, mediation, conflict resolution, timeline"
+      },
+      "contact": {
+        "title": "Contact - MEDIANEG International",
+        "description": "Contact MEDIANEG International for your mediation and negotiation needs. Available 24/7",
+        "keywords": "contact MEDIANEG, mediation, negotiation, diplomatic emergency"
+      }
+    }
+  }
+}
