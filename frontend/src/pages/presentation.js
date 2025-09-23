@@ -1,7 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { strapi } from '@/lib/api';
-import { Users, Shield, Award } from 'lucide-react';
+import { Globe, Shield, TrendingUp, Target, Users } from 'lucide-react';
 import SEOHead from '@/components/SEO/SEOHead';
 import { getPresentationPageStructuredData } from '@/components/SEO/StructuredData';
 
@@ -12,19 +12,19 @@ const PresentationPage = ({ presentations }) => {
 
   const sections = [
     {
-      icon: <Users className="w-12 h-12" />,
+      icon: <Globe className="w-12 h-12" />,
       title: t('presentation.role'),
-      content: presentation.role || "MEDIANEG International joue un rôle central dans la promotion de la paix et de la résolution des conflits par la médiation et la négociation. Notre organisation facilite les dialogues entre les parties en conflit et propose des solutions durables basées sur la compréhension mutuelle et le respect des droits de l'homme.",
+      content: presentation.expertise || t('presentationPage.missionDescription'),
     },
     {
       icon: <Shield className="w-12 h-12" />,
       title: t('presentation.neutrality'),
-      content: presentation.neutrality || "La neutralité est au cœur de notre approche. Nous maintenons une position impartiale dans tous les processus de médiation, garantissant ainsi la confiance de toutes les parties impliquées. Cette neutralité nous permet de créer un environnement sûr et équitable pour la résolution des conflits.",
+      content: presentation.neutrality || t('features.neutralityDescription'),
     },
     {
-      icon: <Award className="w-12 h-12" />,
+      icon: <TrendingUp className="w-12 h-12" />,
       title: t('presentation.commissions'),
-      content: presentation.commissions || "Nos différentes commissions spécialisées travaillent en coordination pour aborder les aspects complexes des conflits internationaux. Chaque commission apporte son expertise dans des domaines spécifiques, allant de la médiation politique à la résolution des conflits économiques.",
+      content: presentation.sectors || t('features.commissionsDescription'),
     },
   ];
 
@@ -86,6 +86,58 @@ const PresentationPage = ({ presentations }) => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Approach Section */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">
+              {t('presentationPage.approachTitle')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('presentationPage.approachSubtitle')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 mx-auto mb-6">
+                <Target className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                {t('presentationPage.approach.analysis.title')}
+              </h3>
+              <p className="text-gray-600">
+                {t('presentationPage.approach.analysis.description')}
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 mx-auto mb-6">
+                <Users className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                {t('presentationPage.approach.collaboration.title')}
+              </h3>
+              <p className="text-gray-600">
+                {t('presentationPage.approach.collaboration.description')}
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 mx-auto mb-6">
+                <TrendingUp className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                {t('presentationPage.approach.results.title')}
+              </h3>
+              <p className="text-gray-600">
+                {t('presentationPage.approach.results.description')}
+              </p>
+            </div>
           </div>
         </div>
       </section>

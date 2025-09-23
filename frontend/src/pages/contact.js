@@ -72,7 +72,7 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-navy-900 mb-8">
+              <h2 className="text-4xl font-bold text-navy-900 mb-8">
                 {t('contactPage.coordinatesTitle')}
               </h2>
               
@@ -103,10 +103,11 @@ const ContactPage = () => {
                 </h3>
                 <ul className="space-y-2 text-gray-600">
                   <li>{t('contactPage.whyContactItems.mediation')}</li>
-                  <li>{t('contactPage.whyContactItems.training')}</li>
-                  <li>{t('contactPage.whyContactItems.partnership')}</li>
+                  <li>{t('contactPage.whyContactItems.sourcing')}</li>
+                  <li>{t('contactPage.whyContactItems.negotiation')}</li>
+                  <li>{t('contactPage.whyContactItems.products')}</li>
+                  <li>{t('contactPage.whyContactItems.logistics')}</li>
                   <li>{t('contactPage.whyContactItems.general')}</li>
-                  <li>{t('contactPage.whyContactItems.emergency')}</li>
                 </ul>
               </div>
             </div>
@@ -123,7 +124,7 @@ const ContactPage = () => {
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">
               {t('contactPage.locationTitle')}
             </h2>
             <p className="text-lg text-gray-600">

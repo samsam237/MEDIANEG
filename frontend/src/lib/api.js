@@ -7,12 +7,22 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  timeout: 5000, // 5 secondes timeout
 });
+
+// Fonction pour vérifier si nous sommes en mode build
+const isBuildTime = () => {
+  return process.env.NODE_ENV === 'production' && !process.env.NEXT_PUBLIC_API_URL;
+};
 
 export const strapi = {
   // Get presentations
   async getPresentations(locale = 'fr') {
     try {
+      // Si nous sommes en mode build, retourner des données vides
+      if (isBuildTime()) {
+        return { data: [] };
+      }
       const response = await api.get(`/api/presentations?locale=${locale}&populate=*`);
       return response.data;
     } catch (error) {
@@ -24,6 +34,10 @@ export const strapi = {
   // Get action plan - avec internationalisation
   async getActionPlan(locale = 'fr') {
     try {
+      // Si nous sommes en mode build, retourner des données vides
+      if (isBuildTime()) {
+        return { data: [] };
+      }
       // Récupérer les plans d'action pour la locale spécifiée
       const response = await api.get(`/api/plan-actions?locale=${locale}&sort=year:asc`);
       

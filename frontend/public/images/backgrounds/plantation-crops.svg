@@ -1,0 +1,128 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ciel -->
+  <defs>
+    <linearGradient id="sky2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="field2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ACD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ciel -->
+  <rect width="800" height="400" fill="url(#sky2)"/>
+  
+  <!-- Champ de plantation -->
+  <rect x="0" y="300" width="800" height="300" fill="url(#field2)"/>
+  
+  <!-- Rangées de cultures -->
+  <g stroke="#228B22" stroke-width="1" opacity="0.7">
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="340" x2="800" y2="340"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="0" y1="380" x2="800" y2="380"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="440" x2="800" y2="440"/>
+    <line x1="0" y1="460" x2="800" y2="460"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+  </g>
+  
+  <!-- Plantes individuelles -->
+  <g fill="#32CD32">
+    <!-- Rangée 1 -->
+    <circle cx="50" cy="330" r="8"/>
+    <circle cx="150" cy="330" r="8"/>
+    <circle cx="250" cy="330" r="8"/>
+    <circle cx="350" cy="330" r="8"/>
+    <circle cx="450" cy="330" r="8"/>
+    <circle cx="550" cy="330" r="8"/>
+    <circle cx="650" cy="330" r="8"/>
+    <circle cx="750" cy="330" r="8"/>
+    
+    <!-- Rangée 2 -->
+    <circle cx="100" cy="360" r="8"/>
+    <circle cx="200" cy="360" r="8"/>
+    <circle cx="300" cy="360" r="8"/>
+    <circle cx="400" cy="360" r="8"/>
+    <circle cx="500" cy="360" r="8"/>
+    <circle cx="600" cy="360" r="8"/>
+    <circle cx="700" cy="360" r="8"/>
+    
+    <!-- Rangée 3 -->
+    <circle cx="50" cy="390" r="8"/>
+    <circle cx="150" cy="390" r="8"/>
+    <circle cx="250" cy="390" r="8"/>
+    <circle cx="350" cy="390" r="8"/>
+    <circle cx="450" cy="390" r="8"/>
+    <circle cx="550" cy="390" r="8"/>
+    <circle cx="650" cy="390" r="8"/>
+    <circle cx="750" cy="390" r="8"/>
+    
+    <!-- Rangée 4 -->
+    <circle cx="100" cy="420" r="8"/>
+    <circle cx="200" cy="420" r="8"/>
+    <circle cx="300" cy="420" r="8"/>
+    <circle cx="400" cy="420" r="8"/>
+    <circle cx="500" cy="420" r="8"/>
+    <circle cx="600" cy="420" r="8"/>
+    <circle cx="700" cy="420" r="8"/>
+  </g>
+  
+  <!-- Tracteur (silhouette) -->
+  <g transform="translate(600, 280)">
+    <!-- Corps du tracteur -->
+    <rect x="0" y="0" width="60" height="30" fill="#2F4F4F" rx="5"/>
+    <!-- Cabine -->
+    <rect x="10" y="-15" width="25" height="20" fill="#2F4F4F" rx="3"/>
+    <!-- Roues -->
+    <circle cx="15" cy="35" r="12" fill="#2F4F4F"/>
+    <circle cx="45" cy="35" r="12" fill="#2F4F4F"/>
+    <!-- Échappement -->
+    <rect x="55" y="5" width="8" height="15" fill="#2F4F4F"/>
+  </g>
+  
+  <!-- Serre -->
+  <g transform="translate(100, 200)">
+    <!-- Structure de la serre -->
+    <rect x="0" y="0" width="120" height="100" fill="none" stroke="#8B4513" stroke-width="3"/>
+    <!-- Toit -->
+    <polygon points="0,0 60,20 120,0" fill="none" stroke="#8B4513" stroke-width="3"/>
+    <!-- Porte -->
+    <rect x="50" y="60" width="20" height="40" fill="none" stroke="#8B4513" stroke-width="2"/>
+    <!-- Plantes à l'intérieur -->
+    <g fill="#32CD32" opacity="0.6">
+      <circle cx="30" cy="80" r="5"/>
+      <circle cx="50" cy="80" r="5"/>
+      <circle cx="70" cy="80" r="5"/>
+      <circle cx="90" cy="80" r="5"/>
+    </g>
+  </g>
+  
+  <!-- Nuages -->
+  <g fill="white" opacity="0.8">
+    <ellipse cx="200" cy="100" rx="30" ry="15"/>
+    <ellipse cx="220" cy="100" rx="25" ry="12"/>
+    <ellipse cx="240" cy="100" rx="20" ry="10"/>
+    
+    <ellipse cx="500" cy="80" rx="35" ry="18"/>
+    <ellipse cx="520" cy="80" rx="30" ry="15"/>
+    <ellipse cx="540" cy="80" rx="25" ry="12"/>
+  </g>
+  
+  <!-- Soleil -->
+  <circle cx="700" cy="120" r="25" fill="#FFD700" opacity="0.9"/>
+  <g stroke="#FFD700" stroke-width="2" opacity="0.7">
+    <line x1="700" y1="80" x2="700" y2="70"/>
+    <line x1="700" y1="160" x2="700" y2="170"/>
+    <line x1="660" y1="120" x2="650" y2="120"/>
+    <line x1="740" y1="120" x2="750" y2="120"/>
+    <line x1="680" y1="100" x2="675" y2="95"/>
+    <line x1="720" y1="100" x2="725" y2="95"/>
+    <line x1="680" y1="140" x2="675" y2="145"/>
+    <line x1="720" y1="140" x2="725" y2="145"/>
+  </g>
+</svg>

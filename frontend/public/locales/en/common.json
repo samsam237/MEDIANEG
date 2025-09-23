@@ -2,26 +2,34 @@
   "navigation": {
     "home": "Home",
     "presentation": "About",
-    "actionPlan": "Action Plan",
+    "actionPlan": "Our Strategy",
     "contact": "Contact"
   },
   "home": {
     "title": "MEDIANEG International",
-    "subtitle": "International Mediation and Negotiation",
-    "tagline": "Promoting peace and conflict resolution through mediation and negotiation",
+    "subtitle": "Experts in International Commercial Mediation and Negotiation",
+    "tagline": "Connecting global markets to African opportunities",
     "learnMore": "Learn more",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "overview": {
+      "global": "Global reach",
+      "globalDesc": "Connections between Africa and international markets",
+      "trusted": "Trusted partner",
+      "trustedDesc": "Guaranteed neutral and professional expertise",
+      "growth": "Sustainable growth",
+      "growthDesc": "Solutions tailored to your commercial objectives"
+    }
   },
   "presentation": {
     "title": "About Us",
-    "role": "Our role",
+    "role": "Our expertise",
     "neutrality": "Our neutrality",
-    "commissions": "Our commissions"
+    "commissions": "Our business sectors"
   },
   "actionPlan": {
-    "title": "Action Plan",
-    "timeline": "Timeline",
-    "currentYear": "Current year"
+    "title": "Our Strategy",
+    "timeline": "Our Achievements",
+    "currentYear": "Our Vision"
   },
   "contact": {
     "title": "Contact",
@@ -48,32 +56,114 @@
     "switch": "Change language"
   },
   "features": {
-    "roleDescription": "Promoting peace and conflict resolution through international mediation and negotiation.",
-    "neutralityDescription": "Maintaining a neutral and impartial position in all mediation processes.",
-    "commissionsDescription": "Coordinating various specialized commissions in conflict resolution.",
-    "commitmentsTitle": "Our commitments",
-    "commitmentsSubtitle": "Discover the values and principles that guide our action",
-    "missionTitle": "Join our mission",
-    "missionDescription": "Together, let's build a more peaceful world through mediation and negotiation",
+    "roleDescription": "Facilitating trusted commercial transactions between Africa and the rest of the world.",
+    "neutralityDescription": "Acting as neutral intermediaries to ensure fair and secure agreements.",
+    "commissionsDescription": "Expertise in agricultural products, raw materials, and manufactured goods.",
+    "commitmentsTitle": "Our services",
+    "commitmentsSubtitle": "Complete solutions for your international commercial exchanges",
+    "missionTitle": "Our mission",
+    "missionDescription": "To provide a reliable and structured bridge between emerging African markets and international trade partners",
     "contactUs": "Contact us"
   },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Complete and personalized solutions for your international commercial needs",
+    "keyFeatures": "Key features",
+    "mediation": {
+      "title": "Commercial Mediation",
+      "description": "We facilitate the resolution of commercial conflicts and alignment of interests between partners. Our neutral expertise enables us to find win-win solutions in complex negotiations.",
+      "features": ["Conflict resolution", "Interest alignment", "Neutral negotiation", "Sustainable solutions"]
+    },
+    "negotiation": {
+      "title": "B2B Negotiation",
+      "description": "We represent your interests in international negotiations, draft robust commercial agreements and conduct strategic negotiations to maximize your opportunities.",
+      "features": ["Commercial representation", "Agreement drafting", "Strategic negotiation", "Condition optimization"]
+    },
+    "sourcing": {
+      "title": "Partner Sourcing",
+      "description": "We identify and connect the ideal commercial partners for your projects. Our extensive network and expertise in African markets guarantee quality connections.",
+      "features": ["Qualified sourcing", "Targeted prospecting", "Networking", "Extended network"]
+    },
+    "intelligence": {
+      "title": "Market Intelligence",
+      "description": "We analyze markets, identify emerging opportunities and provide strategic insights to guide your international commercial decisions.",
+      "features": ["Market analysis", "Opportunity identification", "Competitive intelligence", "Strategic insights"]
+    },
+    "support": {
+      "title": "International Support",
+      "description": "We accompany you in all logistical, customs and regulatory aspects of your international operations to ensure smooth and compliant execution.",
+      "features": ["International logistics", "Customs procedures", "Regulatory compliance", "Operational follow-up"]
+    }
+  },
+  "sectors": {
+    "title": "Our business sectors",
+    "subtitle": "Specialized in exchanges between Africa and the world",
+    "agricultural": "Agricultural products",
+    "rawMaterials": "Raw materials",
+    "manufactured": "Manufactured goods"
+  },
+  "whyChooseUs": {
+    "title": "Why choose us?",
+    "subtitle": "Our expertise at the service of your commercial projects",
+    "expertise": {
+      "title": "Market expertise",
+      "description": "Deep knowledge of African and international markets"
+    },
+    "network": {
+      "title": "Extended network",
+      "description": "Reliable partners in over 20 countries"
+    },
+    "approach": {
+      "title": "Ethical approach",
+      "description": "Transparency and results-oriented"
+    },
+    "support": {
+      "title": "Personalized support",
+      "description": "Availability and personalized follow-up of your projects"
+    }
+  },
+  "cta": {
+    "title": "Contact us today",
+    "subtitle": "Do you have a project or a specific need?",
+    "description": "Let us help you build strong and successful partnerships.",
+    "contactUs": "Contact us",
+    "learnMore": "Learn more",
+    "email": "Email: contact@medianeg.org",
+    "phone": "Phone/WhatsApp: [+XXX]"
+  },
   "presentationPage": {
-    "subtitle": "Discover our mission, values and approach to international mediation",
+    "subtitle": "Discover our mission, values and approach to international commercial mediation",
     "missionTitle": "Our mission",
-    "missionDescription": "Promoting international peace and stability through mediation and negotiation, while respecting the principles of neutrality, impartiality and respect for human rights."
+    "missionDescription": "Medianeg International is a company specialized in commercial mediation and international negotiation, with a strategic focus on trade between Africa and the rest of the world. We facilitate trusted and efficient commercial transactions.",
+    "approachTitle": "Our approach",
+    "approachSubtitle": "A proven methodology for sustainable results",
+    "approach": {
+      "analysis": {
+        "title": "In-depth analysis",
+        "description": "We thoroughly analyze needs, markets and opportunities for each commercial project."
+      },
+      "collaboration": {
+        "title": "Close collaboration",
+        "description": "We work in partnership with our clients to understand their specific objectives and challenges."
+      },
+      "results": {
+        "title": "Measurable results",
+        "description": "We focus on delivering concrete and measurable results for our partners."
+      }
+    }
   },
   "actionPlanPage": {
-    "subtitle": "Discover our roadmap for promoting peace and conflict resolution",
-    "timelineSubtitle": "Our structured action plan for the coming years",
-    "objectivesTitle": "Our objectives",
-    "objectivesSubtitle": "The pillars of our action strategy",
-    "strategicObjectives": "Strategic objectives",
-    "strategicObjectivesDesc": "Define and implement clear objectives for international conflict resolution.",
-    "mediatorTraining": "Mediator training",
-    "mediatorTrainingDesc": "Develop the skills and expertise of our mediation teams.",
-    "operationalPlanning": "Operational planning",
-    "operationalPlanningDesc": "Organize and coordinate field interventions efficiently.",
-    "currentYearDescription": "This year, we are focusing our efforts on strengthening mediation capacities, expanding our international network and improving our conflict resolution processes."
+    "subtitle": "Discover our commercial strategy and vision for connecting African markets to international opportunities",
+    "timelineSubtitle": "Key milestones in our international commercial development",
+    "objectivesTitle": "Our strategic objectives",
+    "objectivesSubtitle": "The pillars of our international commercial growth",
+    "strategicObjectives": "Geographic expansion",
+    "strategicObjectivesDesc": "Develop our presence in new African and international markets to expand our network of commercial partners.",
+    "mediatorTraining": "Sector growth",
+    "mediatorTrainingDesc": "Intensify our activities in agricultural products, raw materials and manufactured goods with strategic partners.",
+    "operationalPlanning": "Trust building",
+    "operationalPlanningDesc": "Improve our mediation and negotiation processes to ensure more secure and sustainable commercial agreements.",
+    "currentYearDescription": "This year, we are focusing our efforts on strengthening our network of commercial partners, expanding our mediation services and improving our negotiation processes to offer even more effective solutions to our international clients."
   },
   "contactPage": {
     "availability": "Available 24/7",
@@ -83,11 +173,12 @@
     "coordinatesTitle": "Our coordinates",
     "whyContactTitle": "Why contact us?",
     "whyContactItems": {
-      "mediation": "• International mediation request",
-      "training": "• Conflict resolution training",
-      "partnership": "• Partnership and collaboration",
-      "general": "• General questions",
-      "emergency": "• Diplomatic emergencies"
+      "mediation": "• International commercial mediation request",
+      "sourcing": "• Commercial partner search",
+      "negotiation": "• Commercial agreement negotiation",
+      "products": "• African products sourcing",
+      "logistics": "• Logistics and customs support",
+      "general": "• General questions about our services"
     },
     "locationTitle": "Our location",
     "locationSubtitle": "Located in the heart of Paris, we are easily accessible",
@@ -102,28 +193,28 @@
   },
   "seo": {
     "siteName": "MEDIANEG International",
-    "siteDescription": "International mediation and negotiation organization for promoting peace and conflict resolution",
-    "keywords": "mediation, negotiation, peace, conflicts, resolution, international, MEDIANEG, diplomacy",
+    "siteDescription": "Experts in international commercial mediation and negotiation, connecting global markets to African opportunities",
+    "keywords": "commercial mediation, international negotiation, Africa trade, agricultural products, raw materials, manufactured goods, MEDIANEG",
     "pages": {
       "home": {
-        "title": "MEDIANEG International - Mediation and Negotiation",
-        "description": "Promote peace and conflict resolution through international mediation and negotiation with MEDIANEG",
-        "keywords": "international mediation, negotiation, peace, conflict resolution, MEDIANEG"
+        "title": "MEDIANEG International - Commercial Mediation and Negotiation",
+        "description": "Connect to African opportunities with MEDIANEG International, experts in international commercial mediation and negotiation",
+        "keywords": "commercial mediation, international negotiation, Africa trade, agricultural products, raw materials, MEDIANEG"
       },
       "presentation": {
-        "title": "About Us - MEDIANEG International",
-        "description": "Discover our mission, values and approach to international mediation for promoting peace",
-        "keywords": "MEDIANEG about, mission, values, international mediation, neutrality"
+        "title": "About Us - MEDIANEG International - Commercial Mediation",
+        "description": "Discover MEDIANEG International, experts in international commercial mediation and negotiation, specialized in Africa-world exchanges",
+        "keywords": "MEDIANEG about, commercial mediation, international negotiation, Africa trade, commercial services"
       },
       "actionPlan": {
-        "title": "Action Plan - MEDIANEG International",
-        "description": "Explore our strategic roadmap for promoting peace and conflict resolution",
-        "keywords": "action plan, strategy, mediation, conflict resolution, timeline"
+        "title": "Commercial Strategy - MEDIANEG International",
+        "description": "Discover our commercial strategy and vision for connecting African markets to international opportunities",
+        "keywords": "commercial strategy, international development, Africa market, commercial partners, growth"
       },
       "contact": {
-        "title": "Contact - MEDIANEG International",
-        "description": "Contact MEDIANEG International for your mediation and negotiation needs. Available 24/7",
-        "keywords": "contact MEDIANEG, mediation, negotiation, diplomatic emergency"
+        "title": "Contact - MEDIANEG International - Commercial Services",
+        "description": "Contact MEDIANEG International for your commercial mediation, sourcing and international negotiation needs",
+        "keywords": "contact MEDIANEG, commercial mediation, sourcing, negotiation, commercial partners"
       }
     }
   }

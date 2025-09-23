@@ -2,7 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Timeline from '@/components/Timeline';
 import { strapi } from '@/lib/api';
-import { Calendar, Target, Users } from 'lucide-react';
+import { Globe, Target, Users, TrendingUp, Shield, Handshake } from 'lucide-react';
 import SEOHead from '@/components/SEO/SEOHead';
 import { getActionPlanPageStructuredData } from '@/components/SEO/StructuredData';
 import ActionPlanDebug from '@/components/ActionPlan/ActionPlanDebug';
@@ -35,17 +35,17 @@ const ActionPlanPage = ({ actionPlan }) => {
 
   const objectives = [
     {
-      icon: <Target className="w-8 h-8" />,
+      icon: <Globe className="w-8 h-8" />,
       title: t('actionPlanPage.strategicObjectives'),
       description: t('actionPlanPage.strategicObjectivesDesc'),
     },
     {
-      icon: <Users className="w-8 h-8" />,
+      icon: <TrendingUp className="w-8 h-8" />,
       title: t('actionPlanPage.mediatorTraining'),
       description: t('actionPlanPage.mediatorTrainingDesc'),
     },
     {
-      icon: <Calendar className="w-8 h-8" />,
+      icon: <Shield className="w-8 h-8" />,
       title: t('actionPlanPage.operationalPlanning'),
       description: t('actionPlanPage.operationalPlanningDesc'),
     },
@@ -138,7 +138,7 @@ const ActionPlanPage = ({ actionPlan }) => {
       <section className="py-20 bg-navy-900">
         <div className="container-custom text-center">
           <h2 className="text-4xl font-bold text-white mb-8">
-            {t('actionPlan.currentYear')} - {new Date().getFullYear()}
+            {t('actionPlan.currentYear')} {new Date().getFullYear()}
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             {t('actionPlanPage.currentYearDescription')}
