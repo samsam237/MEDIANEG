@@ -63,13 +63,13 @@ const SEOHead = ({
       {/* Balises supplémentaires pour le SEO */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="theme-color" content="#1e3a8a" />
+      <meta name="theme-color" content="#f97316" />
       
       {/* Favicon et icônes */}
       <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
       
       {/* Préchargement des ressources critiques */}
@@ -106,8 +106,10 @@ const SEOHead = ({
             },
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Paris",
-              "addressCountry": "FR"
+              "streetAddress": "Grand-Rue 1A",
+              "addressLocality": "Neuchâtel",
+              "postalCode": "2000",
+              "addressCountry": "CH"
             },
             "sameAs": [
               "https://twitter.com/MEDIANEGIntl",

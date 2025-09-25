@@ -2,7 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Timeline from '@/components/Timeline';
 import { strapi } from '@/lib/api';
-import { Globe, Target, Users, TrendingUp, Shield, Handshake } from 'lucide-react';
+import { Globe, Target, Users, TrendingUp, Shield, Hand } from 'lucide-react';
 import SEOHead from '@/components/SEO/SEOHead';
 import { getActionPlanPageStructuredData } from '@/components/SEO/StructuredData';
 import ActionPlanDebug from '@/components/ActionPlan/ActionPlanDebug';
@@ -61,13 +61,23 @@ const ActionPlanPage = ({ actionPlan }) => {
       />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-navy-50 py-16">
-        <div className="container-custom">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('/images/backgrounds/hero-construction-industry.jpg')`,
+              backgroundAttachment: 'fixed'
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-50/90 to-navy-50/90" />
+        </div>
+        <div className="relative z-10 container-custom">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
               {t('actionPlan.title')}
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-white/90 drop-shadow-md">
               {t('actionPlanPage.subtitle')}
             </p>
           </div>
@@ -78,7 +88,7 @@ const ActionPlanPage = ({ actionPlan }) => {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="text-4xl font-bold text-primary-700 mb-4">
               {t('actionPlan.timeline')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -108,7 +118,7 @@ const ActionPlanPage = ({ actionPlan }) => {
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="text-4xl font-bold text-primary-700 mb-4">
               {t('actionPlanPage.objectivesTitle')}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -122,7 +132,7 @@ const ActionPlanPage = ({ actionPlan }) => {
                 <div className="text-primary-600 mb-4 flex justify-center">
                   {objective.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">
+                <h3 className="text-xl font-semibold text-primary-700 mb-4">
                   {objective.title}
                 </h3>
                 <p className="text-gray-600">
@@ -135,14 +145,40 @@ const ActionPlanPage = ({ actionPlan }) => {
       </section>
 
       {/* Current Year Focus */}
-      <section className="py-20 bg-navy-900">
-        <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('/images/backgrounds/hero-technology-innovation.jpg')`,
+              backgroundAttachment: 'fixed'
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-navy-900/80" />
+        </div>
+        <div className="relative z-10 container-custom text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 drop-shadow-lg">
             {t('actionPlan.currentYear')} {new Date().getFullYear()}
           </h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
             {t('actionPlanPage.currentYearDescription')}
           </p>
+          
+          {/* Additional visual elements */}
+          <div className="mt-12 flex flex-wrap justify-center gap-6">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
+              <div className="text-2xl font-bold text-white">2025</div>
+              <div className="text-sm text-white/80">Vision</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
+              <div className="text-2xl font-bold text-white">15+</div>
+              <div className="text-sm text-white/80">Années d'expérience</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
+              <div className="text-2xl font-bold text-white">50+</div>
+              <div className="text-sm text-white/80">Pays partenaires</div>
+            </div>
+          </div>
         </div>
       </section>
     </>
@@ -150,27 +186,15 @@ const ActionPlanPage = ({ actionPlan }) => {
 };
 
 export async function getStaticProps({ locale }) {
-  try {
-    console.log('getStaticProps - Locale:', locale);
-    const actionPlan = await strapi.getActionPlan(locale);
-    console.log('getStaticProps - ActionPlan récupéré:', actionPlan);
-    
-    return {
-      props: {
-        actionPlan,
-        ...(await serverSideTranslations(locale, ['common'])),
-      },
-      revalidate: 3600, // Revalidate every hour
-    };
-  } catch (error) {
-    console.error('Error fetching action plan:', error);
-    return {
-      props: {
-        actionPlan: { data: [] },
-        ...(await serverSideTranslations(locale, ['common'])),
-      },
-    };
-  }
+  // Pendant le build, on retourne des données vides
+  // Les données seront chargées côté client
+  return {
+    props: {
+      actionPlan: { data: [] },
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+    revalidate: 3600, // Revalidate every hour
+  };
 }
 
 export default ActionPlanPage;

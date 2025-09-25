@@ -14,7 +14,7 @@ const Logo = ({
     <div className={`flex items-center space-x-3 ${className}`}>
       <div className="relative" style={{ width, height }}>
         <Image
-          src="/logo.png"
+          src="/logo.svg"
           alt="MEDIANEG International"
           fill
           className="object-contain"

@@ -9,7 +9,7 @@ const Footer = () => {
   const { t } = useTranslation('common');
 
   return (
-    <footer className="bg-navy-900 text-white">
+    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Organization Info */}
@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm text-gray-300">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span>123 Avenue de la Paix, 75000 Paris, France</span>
+                <span>Grand-Rue 1A, 2000 Neuchâtel, Suisse</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />

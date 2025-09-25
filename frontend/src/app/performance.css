@@ -1,0 +1,41 @@
+/* Optimisations de performance pour les animations MEDIANEG */
+
+/* Réduction du mouvement pour l'accessibilité */
+.reduce-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Optimisation GPU pour les animations */
+.animate-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Lazy loading des images */
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img.lazy.loaded {
+  opacity: 1;
+}
+
+/* Optimisation des transitions */
+.smooth-transition {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Préchargement des animations critiques */
+.preload-animations {
+  animation-play-state: paused;
+}
+
+.preload-animations.ready {
+  animation-play-state: running;
+}

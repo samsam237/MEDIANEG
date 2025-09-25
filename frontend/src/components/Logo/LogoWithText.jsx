@@ -18,7 +18,7 @@ const LogoWithText = ({
       style={{ width: className ? undefined : width, height: className ? undefined : height }}
     >
       <Image
-        src="/logo.png"
+        src="/logo.svg"
         alt="MEDIANEG International"
         fill
         className="object-contain"
