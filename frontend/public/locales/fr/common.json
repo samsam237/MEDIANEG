@@ -12,12 +12,12 @@
     "learnMore": "En savoir plus",
     "getInTouch": "Nous contacter",
     "overview": {
-      "global": "Portée mondiale",
-      "globalDesc": "Connexions entre l'Afrique et les marchés internationaux",
+      "global": "Présence internationale",
+      "globalDesc": "Présents dans plus de 30 pays avec des partenaires durables établis",
       "trusted": "Partenaire de confiance",
-      "trustedDesc": "Expertise neutre et professionnelle garantie",
-      "growth": "Croissance durable",
-      "growthDesc": "Solutions adaptées à vos objectifs commerciaux"
+      "trustedDesc": "Expertise neutre et professionnelle garantie avec 95% de réussite",
+      "growth": "Croissance exponentielle",
+      "growthDesc": "Plus de 500 projets actifs dans 20 pays en moins d'un an"
     }
   },
   "presentation": {
@@ -66,12 +66,19 @@
     "contactUs": "Nous contacter"
   },
   "services": {
+    "sectionTitle": "Nos Services",
     "title": "Nos services",
     "subtitle": "Des solutions complètes et personnalisées pour vos besoins commerciaux internationaux",
     "keyFeatures": "Fonctionnalités clés",
+    "learnMore": "En savoir plus",
+    "cta": {
+      "title": "Besoin d'un accompagnement personnalisé ?",
+      "subtitle": "Contactez-nous pour discuter de vos besoins spécifiques et découvrir comment nous pouvons vous aider.",
+      "button": "Nous contacter"
+    },
     "mediation": {
       "title": "Médiation commerciale",
-      "description": "Nous facilitons la résolution de conflits commerciaux et l'alignement des intérêts entre partenaires. Notre expertise neutre permet de trouver des solutions gagnant-gagnant dans les négociations complexes.",
+      "description": "Nous facilitons la résolution de conflits commerciaux et l'alignement des intérêts entre partenaires internationaux et producteurs africains. Notre expertise neutre permet de trouver des solutions gagnant-gagnant, particulièrement dans les secteurs du cacao, café et huile.",
       "features": ["Résolution de conflits", "Alignement des intérêts", "Négociation neutre", "Solutions durables"]
     },
     "negotiation": {
@@ -81,7 +88,7 @@
     },
     "sourcing": {
       "title": "Recherche de partenaires",
-      "description": "Nous identifions et mettons en relation les partenaires commerciaux idéaux pour vos projets. Notre réseau étendu et notre expertise du marché africain garantissent des connexions de qualité.",
+      "description": "Nous identifions et mettons en relation les partenaires commerciaux idéaux pour vos projets, avec une expertise particulière dans le sourcing de cacao, café et huile de qualité. Notre réseau étendu dans la région CEMAC garantit des connexions durables.",
       "features": ["Sourcing qualifié", "Prospection ciblée", "Mise en relation", "Réseau étendu"]
     },
     "intelligence": {
@@ -96,13 +103,19 @@
     }
   },
   "sectors": {
+    "sectionTitle": "Secteurs d'Activité",
     "title": "Nos secteurs d'activité",
     "subtitle": "Spécialisés dans les échanges entre l'Afrique et le monde",
     "agricultural": "Produits agricoles",
     "rawMaterials": "Matières premières",
-    "manufactured": "Biens manufacturés"
+    "manufactured": "Biens manufacturés",
+    "approach": {
+      "title": "Une approche transversale",
+      "description": "Notre expertise s'étend à tous les secteurs économiques, avec une approche intégrée qui combine médiation, négociation et intelligence économique pour maximiser vos opportunités."
+    }
   },
   "whyChooseUs": {
+    "advantage": "Notre Avantage",
     "title": "Pourquoi nous choisir ?",
     "subtitle": "Notre expertise au service de vos projets commerciaux",
     "expertise": {
@@ -120,6 +133,17 @@
     "support": {
       "title": "Accompagnement personnalisé",
       "description": "Disponibilité et suivi personnalisé de vos projets"
+    },
+    "excellence": {
+      "title": "Excellence Reconnue",
+      "description": "Croissance exponentielle en moins d'un an avec un taux de réussite de 95%"
+    },
+    "reactivity": {
+      "title": "Réactivité",
+      "description": "Accompagnement avec des équipes locales dans chaque région d'intervention"
+    },
+    "stats": {
+      "successRate": "Taux de Réussite"
     }
   },
   "cta": {
@@ -166,9 +190,13 @@
     "currentYearDescription": "Cette année, nous concentrons nos efforts sur le renforcement de notre réseau de partenaires commerciaux, l'expansion de nos services de médiation et l'amélioration de nos processus de négociation pour offrir des solutions encore plus efficaces à nos clients internationaux."
   },
   "contactPage": {
-    "availability": "Disponible 24h/7j",
+    "title": "Contactez-nous",
+    "readyToStart": "Prêt à démarrer votre projet ?",
+    "subtitle": "Notre équipe d'experts est à votre disposition pour vous accompagner dans vos projets de médiation et négociation commerciale internationale.",
+    "availability": "Disponible du lundi au vendredi, 9h-17h",
+    "emailDescription": "Réponse sous 24h",
     "hours": "Horaires",
-    "hoursWeekdays": "Lun - Ven: 9h00 - 18h00",
+    "hoursWeekdays": "Lun - Ven: 9h00 - 17h00",
     "hoursEmergency": "Urgences: 24h/7j",
     "coordinatesTitle": "Nos coordonnées",
     "whyContactTitle": "Pourquoi nous contacter ?",
@@ -178,11 +206,130 @@
       "negotiation": "• Négociation d'accords commerciaux",
       "products": "• Sourcing de produits africains",
       "logistics": "• Accompagnement logistique et douanier",
-      "general": "• Questions générales sur nos services"
+      "general": "• Questions générales sur nos services",
+      "consultation": "Consultation gratuite pour évaluer vos besoins",
+      "quote": "Devis personnalisé sous 48h",
+      "support": "Accompagnement dédié tout au long du projet",
+      "technical": "Support technique et commercial inclus"
     },
+    "sendMessage": "Envoyez-nous un message",
+    "formError": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer ou nous contacter directement.",
+    "formDisabled": "Formulaire désactivé",
     "locationTitle": "Notre localisation",
-    "locationSubtitle": "Situés au cœur de Paris, nous sommes facilement accessibles",
+    "locationSubtitle": "Situés au cœur de Neuchâtel, nous sommes facilement accessibles",
     "mapPlaceholder": "Carte interactive (à intégrer avec Google Maps ou OpenStreetMap)"
+  },
+  "stats": {
+    "projectsInProgress": "+500 projets actifs",
+    "clientsInCountries": "Clients dans 20 pays",
+    "countriesPresent": "Dans plus de 30 pays",
+    "sustainablePartners": "Partenaires durables établis",
+    "founded": "Création en 2025",
+    "rapidGrowth": "Croissance exponentielle en moins d'un an",
+    "vision": "Vision"
+  },
+  "growth": {
+    "sectionTitle": "Notre Croissance",
+    "title": "Notre croissance exponentielle",
+    "subtitle": "Libération des marchés agricoles et matières premières dans la CEMAC",
+    "cameroonFocus": "Focus stratégique sur le Cameroun",
+    "guineaGulfPartner": "Partenaire dynamique du golfe de Guinée",
+    "cemacExpansion": "Expansion rapide dans la région CEMAC",
+    "localStrength": "Notre force repose sur notre expertise locale et nos partenariats durables",
+    "description": "Fondée récemment en 2025, MEDIANEG International a démontré une croissance rapide et une expansion de marché exceptionnelle. Nous nous concentrons sur la libération des marchés agricoles et des matières premières dans la Communauté Économique et Monétaire de l'Afrique Centrale (CEMAC), avec un focus particulier sur le Cameroun.",
+    "achievements": {
+      "title": "Nos réalisations en un an",
+      "projects": "Plus de 500 projets actifs",
+      "countries": "Clients dans 20 pays",
+      "cemac": "Présence forte dans la région CEMAC",
+      "cameroon": "Partenaire de référence au Cameroun"
+    },
+    "productsFocus": "Focus sur nos produits phares",
+    "productsDescription": "Nous nous spécialisons dans le commerce et l'exportation de produits agricoles de qualité supérieure, avec une expertise particulière dans le cacao, le café et les huiles végétales.",
+    "cemacFocus": "Présence dans toute la région CEMAC",
+    "cemacDescription": "Notre réseau s'étend dans tous les pays de la Communauté Économique et Monétaire de l'Afrique Centrale, avec des partenaires locaux établis et une compréhension approfondie des spécificités de chaque marché."
+  },
+  "testimonials": {
+    "title": "Témoignages clients : Écoutez nos partenaires satisfaits",
+    "subtitle": "Découvrez comment MEDIANEG International transforme les défis commerciaux en succès durables",
+    "martinLibam": {
+      "name": "Martin Libam",
+      "company": "Directeur Général, Entreprise Camerounaise",
+      "quote": "MEDIANEG International nous a permis d'établir des partenariats durables avec des fournisseurs européens. Leur expertise en médiation commerciale est exceptionnelle et leur approche locale nous a donné confiance dès le début."
+    },
+    "cameroonContact1": {
+      "name": "Aïcha Diallo",
+      "company": "Productrice de Cacao, Région du Sud-Ouest",
+      "quote": "Grâce à MEDIANEG, nous avons pu exporter notre cacao vers l'Europe avec des conditions commerciales très favorables. Leur accompagnement personnalisé a transformé notre activité."
+    },
+    "cameroonContact2": {
+      "name": "Jean-Baptiste Nguema", 
+      "company": "Président, Coopérative Agricole de Douala",
+      "quote": "Leur expertise dans la négociation de nos contrats d'exportation de café a été déterminante pour notre succès. MEDIANEG comprend parfaitement les enjeux locaux."
+    },
+    "internationalClient": {
+      "name": "Sarah Johnson",
+      "company": "CEO, AgroTech Europe",
+      "quote": "MEDIANEG nous a ouvert les portes du marché camerounais avec une approche professionnelle et des partenaires de confiance. Leur réseau local est impressionnant."
+    }
+  },
+  "products": {
+    "cocoa": "Cacao",
+    "coffee": "Café", 
+    "oil": "Huile",
+    "agriculturalProducts": "Produits agricoles",
+    "rawMaterials": "Matières premières",
+    "manufacturedGoods": "Biens manufacturés"
+  },
+  "homePage": {
+    "whoWeAre": {
+      "imageAlt": "Équipe MEDIANEG en réunion de médiation",
+      "subtitle": "À propos de MEDIANEG",
+      "title": "Votre partenaire de confiance en médiation commerciale",
+      "content": "Fondée en 2025, MEDIANEG International facilite les échanges commerciaux entre l'Afrique et le monde. Notre expertise en médiation et négociation nous permet de créer des ponts durables entre les entreprises et les marchés internationaux.",
+      "feature1": "Médiation commerciale internationale depuis 2025",
+      "feature2": "Réseau de partenaires dans 30+ pays",
+      "feature3": "Expertise sectorielle approfondie",
+      "feature4": "Approche éthique et transparente"
+    },
+    "mission": {
+      "imageAlt": "Handshake symbolisant la médiation et la coopération",
+      "subtitle": "Notre Mission",
+      "title": "Promouvoir la paix par le commerce",
+      "content": "Nous croyons que le commerce équitable et la médiation transparente sont les clés d'un développement durable et d'une paix durable. Notre mission est de faciliter ces échanges en créant de la valeur pour tous les acteurs.",
+      "neutrality": {
+        "title": "Neutralité",
+        "description": "Garantir une médiation impartiale entre toutes les parties"
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Connaissance approfondie des marchés africains et internationaux"
+      },
+      "transparency": {
+        "title": "Transparence",
+        "description": "Processus clairs et communication ouverte à chaque étape"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Intégration des nouvelles technologies dans nos services"
+      }
+    },
+    "testimonials": {
+      "imageAlt": "Partenaires et clients satisfaits de MEDIANEG",
+      "subtitle": "Témoignages",
+      "title": "Nos clients témoignent",
+      "content": "Découvrez comment MEDIANEG a transformé les projets commerciaux de nos clients et partenaires à travers le monde. Leurs succès sont notre plus grande récompense.",
+      "feature1": "Plus de 500 projets actifs",
+      "feature2": "Clients dans 20 pays",
+      "feature3": "95% de taux de satisfaction",
+      "feature4": "Partenariats durables établis"
+    },
+    "cta": {
+      "title": "Prêt à transformer vos projets commerciaux ?",
+      "subtitle": "Rejoignez les centaines d'entreprises qui font confiance à MEDIANEG pour leurs projets de médiation et négociation internationale.",
+      "button1": "Démarrer un projet",
+      "button2": "En savoir plus"
+    }
   },
   "quickLinks": "Liens rapides",
   "placeholders": {

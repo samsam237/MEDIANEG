@@ -66,7 +66,7 @@ const ActionPlanPage = ({ actionPlan }) => {
           <div 
             className="w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/images/backgrounds/hero-construction-industry.jpg')`,
+              backgroundImage: `url('/images/backgrounds/pexels-adam-lukac-254247-773958.jpg')`,
               backgroundAttachment: 'fixed'
             }}
           />
@@ -168,15 +168,15 @@ const ActionPlanPage = ({ actionPlan }) => {
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
               <div className="text-2xl font-bold text-white">2025</div>
-              <div className="text-sm text-white/80">Vision</div>
+              <div className="text-sm text-white/80">{t('stats.vision')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
-              <div className="text-2xl font-bold text-white">15+</div>
-              <div className="text-sm text-white/80">Années d'expérience</div>
+              <div className="text-2xl font-bold text-white">1+</div>
+              <div className="text-sm text-white/80">{t('stats.rapidGrowth')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
-              <div className="text-2xl font-bold text-white">50+</div>
-              <div className="text-sm text-white/80">Pays partenaires</div>
+              <div className="text-2xl font-bold text-white">20+</div>
+              <div className="text-sm text-white/80">{t('stats.clientsInCountries')}</div>
             </div>
           </div>
         </div>

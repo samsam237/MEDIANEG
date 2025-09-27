@@ -158,7 +158,7 @@ const PresentationPage = ({ presentations }) => {
           <div 
             className="w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url('/images/backgrounds/hero-mediation-handshake.jpg')`,
+              backgroundImage: `url('/images/backgrounds/pexels-nicola-barts-7937413.jpg')`,
               backgroundAttachment: 'fixed'
             }}
           />
@@ -175,20 +175,20 @@ const PresentationPage = ({ presentations }) => {
           {/* Additional visual elements */}
           <div className="mt-12 flex flex-wrap justify-center gap-6">
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
-              <div className="text-2xl font-bold text-white">2008</div>
-              <div className="text-sm text-white/80">Fondation</div>
+              <div className="text-2xl font-bold text-white">2025</div>
+              <div className="text-sm text-white/80">{t('stats.founded')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
               <div className="text-2xl font-bold text-white">500+</div>
-              <div className="text-sm text-white/80">Projets réussis</div>
+              <div className="text-sm text-white/80">{t('stats.projectsInProgress')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
               <div className="text-2xl font-bold text-white">95%</div>
-              <div className="text-sm text-white/80">Taux de satisfaction</div>
+              <div className="text-sm text-white/80">{t('whyChooseUs.stats.successRate')}</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 border border-white/20">
-              <div className="text-2xl font-bold text-white">50+</div>
-              <div className="text-sm text-white/80">Pays partenaires</div>
+              <div className="text-2xl font-bold text-white">20+</div>
+              <div className="text-sm text-white/80">{t('stats.clientsInCountries')}</div>
             </div>
           </div>
         </div>

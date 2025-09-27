@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { ArrowRight, MessageCircle, Globe, Shield, TrendingUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import LogoHTML from '@/components/Logo/LogoHTML';
 
 const HeroSection = () => {
   const { t } = useTranslation('common');
@@ -10,11 +11,15 @@ const HeroSection = () => {
   const backgroundImages = [
     '/images/backgrounds/hero-business-meeting.jpg',
     '/images/backgrounds/hero-africa-business.jpg',
-    '/images/backgrounds/hero-mediation-handshake.jpg',
     '/images/backgrounds/hero-africa-landscape.jpg',
-    '/images/backgrounds/hero-construction-industry.jpg',
-    '/images/backgrounds/hero-agriculture-farming.jpg',
-    '/images/backgrounds/hero-technology-innovation.jpg'
+    '/images/backgrounds/hero-technology-innovation.jpg',
+    '/images/backgrounds/beau-coup-de-plantations-de-cacao-avec-des-feuilles-vertes-dans-une-jungle.jpg',
+    '/images/backgrounds/cacao-pod-4469207.jpg',
+    '/images/backgrounds/pexels-adam-lukac-254247-773958.jpg',
+    '/images/backgrounds/pexels-nicola-barts-7937413.jpg',
+    '/images/backgrounds/pexels-sarah-33270-122370.jpg',
+    '/images/backgrounds/sebastien-noel-JpbytysnMeQ-unsplash.jpg',
+    '/images/backgrounds/zdenek-machacek-jvdvp6bplTs-unsplash.jpg'
   ];
 
   useEffect(() => {
@@ -49,36 +54,28 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container-custom text-center text-white">
         <div className="max-w-5xl mx-auto">
-          {/* Logo/Icon */}
+          {/* Logo HTML */}
           <div className="flex justify-center mb-8" data-aos="fade-up" data-aos-delay="200">
-            <div className="w-32 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center shadow-2xl animate-pulse-soft border border-white/20">
-              <img 
-                src="/logo.svg" 
-                alt="MEDIANEG International" 
-                className="w-28 h-12 object-contain filter brightness-0 invert"
-              />
-            </div>
+            <LogoHTML 
+              size="xlarge" 
+              className="justify-center"
+            />
           </div>
 
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up" data-aos-delay="400">
-            {t('home.title')}
-          </h1>
-
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-200 mb-4 font-light" data-aos="fade-up" data-aos-delay="600">
+          <p className="text-xl md:text-2xl text-gray-200 mb-4 font-light" data-aos="fade-up" data-aos-delay="400">
             {t('home.subtitle')}
           </p>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="800">
+          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="600">
             {t('home.tagline')}
           </p>
 
           {/* Feature Cards */}
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-12 max-w-6xl mx-auto border border-white/20" data-aos="fade-up" data-aos-delay="1000">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-12 max-w-6xl mx-auto border border-white/20" data-aos="fade-up" data-aos-delay="800">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1200">
+              <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1000">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mb-4 shadow-lg hover:scale-110 transition-transform duration-300">
                   <Globe className="w-8 h-8 text-white" />
                 </div>
@@ -89,7 +86,7 @@ const HeroSection = () => {
                   {t('home.overview.globalDesc')}
                 </p>
               </div>
-              <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1400">
+              <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1100">
                 <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mb-4 shadow-lg hover:scale-110 transition-transform duration-300">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
@@ -100,7 +97,7 @@ const HeroSection = () => {
                   {t('home.overview.trustedDesc')}
                 </p>
               </div>
-              <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1600">
+              <div className="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="1200">
                 <div className="w-16 h-16 bg-accent-600 rounded-full flex items-center justify-center mb-4 shadow-lg hover:scale-110 transition-transform duration-300">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
@@ -115,7 +112,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="1800">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="1400">
             <Link 
               href="/presentation" 
               className="btn-primary inline-flex items-center justify-center space-x-3 text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-bounce-soft"
@@ -133,7 +130,7 @@ const HeroSection = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2" data-aos="fade-up" data-aos-delay="2000">
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2" data-aos="fade-up" data-aos-delay="1600">
             <div className="animate-bounce">
               <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center hover:border-white/80 transition-colors duration-300">
                 <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>

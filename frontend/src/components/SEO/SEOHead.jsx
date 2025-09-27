@@ -100,7 +100,7 @@ const SEOHead = ({
             "logo": "https://medianeg.org/logo.png",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+33-1-XX-XX-XX-XX",
+              "telephone": "+41-58-201-0612",
               "contactType": "customer service",
               "availableLanguage": ["French", "English"]
             },

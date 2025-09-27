@@ -101,7 +101,7 @@ const ServicesSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-primary-600 font-semibold text-lg uppercase tracking-wide mb-4" data-aos="fade-up">
-            Nos Services
+            {t('services.sectionTitle')}
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-delay="200">
             {t('services.title')}
@@ -153,13 +153,13 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Learn More Link */}
-                <Link 
-                  href="/presentation" 
-                  className={`inline-flex items-center space-x-2 text-${service.color}-600 hover:text-${service.color}-700 font-medium transition-colors duration-200`}
-                >
-                  <span>En savoir plus</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+              <Link
+                href="/presentation"
+                className={`inline-flex items-center space-x-2 text-${service.color}-600 hover:text-${service.color}-700 font-medium transition-colors duration-200`}
+              >
+                <span>{t('services.learnMore')}</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
               </div>
             );
           })}
@@ -169,16 +169,16 @@ const ServicesSection = () => {
         <div className="text-center mt-16" data-aos="fade-up" data-aos-delay="1200">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 max-w-2xl mx-auto hover:shadow-xl transition-shadow duration-300">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Besoin d'un accompagnement personnalisé ?
+              {t('services.cta.title')}
             </h3>
             <p className="text-gray-600 mb-6">
-              Contactez-nous pour discuter de vos besoins spécifiques et découvrir comment nous pouvons vous aider.
+              {t('services.cta.subtitle')}
             </p>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="btn-primary inline-flex items-center space-x-2 hover:scale-105 transition-transform duration-300"
             >
-              <span>Nous contacter</span>
+              <span>{t('services.cta.button')}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

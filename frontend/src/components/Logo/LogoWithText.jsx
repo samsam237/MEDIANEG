@@ -7,8 +7,8 @@ import Link from 'next/link';
  */
 const LogoWithText = ({ 
   href = "/", 
-  width = 120, 
-  height = 60, 
+  width = 150, 
+  height = 80, 
   className = "",
   priority = false 
 }) => {

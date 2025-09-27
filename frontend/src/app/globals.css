@@ -4,6 +4,79 @@
 @import './animations.css';
 @import './performance.css';
 
+/* Logo HTML Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.medianeg {
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.international {
+  color: #fb923c; /* primary-400 */
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Responsive adjustments for logo */
+@media (max-width: 768px) {
+  .logo-container {
+    gap: 0.75rem;
+  }
+  
+  .logo-m img {
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .medianeg {
+    font-size: 1.5rem;
+  }
+  
+  .international {
+    font-size: 0.875rem;
+    letter-spacing: 0.15em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .logo-text {
+    text-align: center;
+  }
+  
+  .logo-m img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  
+  .medianeg {
+    font-size: 1.25rem;
+  }
+  
+  .international {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap');
 
 html {
@@ -13,7 +86,7 @@ html {
 body {
   font-family: 'Roboto', 'Lato', system-ui, sans-serif;
   line-height: 1.6;
-  color: #374151;
+  color: #4b3621; /* Coffee-900 for better brand alignment */
 }
 
 /* Custom scrollbar */

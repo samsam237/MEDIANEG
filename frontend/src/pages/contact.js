@@ -22,7 +22,7 @@ const ContactPage = () => {
       icon: <Phone className="w-6 h-6" />,
       title: t('contact.phone'),
       details: [
-        "+33 1 23 45 67 89",
+        "+41 (58) 201 0612",
         t('contactPage.availability')
       ],
     },

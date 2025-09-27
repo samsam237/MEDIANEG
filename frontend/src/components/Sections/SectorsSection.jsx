@@ -16,7 +16,7 @@ const SectorsSection = () => {
       icon: <Sprout className="w-12 h-12" />,
       title: t('sectors.agricultural'),
       description: 'Accompagnement des producteurs agricoles dans leurs négociations commerciales et l\'accès aux marchés internationaux',
-      image: '/images/backgrounds/hero-agriculture-farming.jpg',
+      image: '/images/backgrounds/beau-coup-de-plantations-de-cacao-avec-des-feuilles-vertes-dans-une-jungle.jpg',
       features: [
         'Négociation de contrats d\'exportation',
         'Certification et qualité',
@@ -29,7 +29,7 @@ const SectorsSection = () => {
       icon: <Package className="w-12 h-12" />,
       title: t('sectors.rawMaterials'),
       description: 'Commercialisation et négociation des matières premières avec une expertise des marchés internationaux',
-      image: '/images/backgrounds/hero-construction-industry.jpg',
+      image: '/images/backgrounds/cacao-pod-4469207.jpg',
       features: [
         'Analyse des marchés mondiaux',
         'Négociation de prix',
@@ -81,7 +81,7 @@ const SectorsSection = () => {
       icon: <Zap className="w-12 h-12" />,
       title: 'Innovation Digitale',
       description: 'Intégration des technologies numériques dans les processus commerciaux',
-      image: '/images/backgrounds/hero-mediation-handshake.jpg',
+      image: '/images/backgrounds/sebastien-noel-JpbytysnMeQ-unsplash.jpg',
       features: [
         'Plateformes digitales',
         'E-commerce',
@@ -124,7 +124,7 @@ const SectorsSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-primary-600 font-semibold text-lg uppercase tracking-wide mb-4" data-aos="fade-up">
-            Secteurs d'Activité
+            {t('sectors.sectionTitle')}
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-delay="200">
             {t('sectors.title')}
@@ -193,11 +193,10 @@ const SectorsSection = () => {
         <div className="mt-16 text-center" data-aos="fade-up" data-aos-delay="1200">
           <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 border border-gray-200 hover:shadow-lg transition-shadow duration-300">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Une approche transversale
+              {t('sectors.approach.title')}
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Notre expertise s'étend à tous les secteurs économiques, avec une approche intégrée 
-              qui combine médiation, négociation et intelligence économique pour maximiser vos opportunités.
+              {t('sectors.approach.description')}
             </p>
           </div>
         </div>

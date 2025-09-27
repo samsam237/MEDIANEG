@@ -35,8 +35,8 @@ const Header = () => {
           {/* Logo */}
           <LogoWithText 
             href="/"
-            width={120}
-            height={60}
+            width={150}
+            height={90}
             className="w-24 h-12 md:w-32 md:h-16"
             priority={true}
           />

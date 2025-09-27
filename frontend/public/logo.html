@@ -1,0 +1,83 @@
+<div class="logo-container">
+    <div class="logo-m">
+        <img src="path/to/your/m_logo.png" alt="MEDIANEG International M Logo">
+    </div>
+    <div class="logo-text">
+        <p class="medianeg">MEDIANEG</p>
+        <p class="international">INTERNATIONAL</p>
+    </div>
+</div>
+<style>
+    /* Ensure these styles are in your main stylesheet or a <style> block in your <head> */
+
+.logo-container {
+    display: flex; /* Arranges the M and the text block side-by-side */
+    align-items: center; /* Vertically aligns the M and the text block */
+    gap: 15px; /* Adjust space between the M image and the text block */
+}
+
+.logo-m img {
+    height: 50px; /* Adjust the height of the M logo as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any extra space below the image */
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column; /* Stacks "MEDIANEG" above "INTERNATIONAL" */
+    text-align: left; /* Aligns the text to the left */
+    /* Ensure a sans-serif font is globally defined or defined here */
+    font-family: Arial, Helvetica, sans-serif; /* Example: use your preferred sans-serif font */
+}
+
+.medianeg {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: 700; /* Bold */
+    color: #003366; /* Dark blue */
+    line-height: 1.2; /* Adjust line height for MEDIANEG */
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.international {
+    font-size: 16px; /* Smaller font size */
+    color: #FF7F50; /* Coral color */
+    letter-spacing: 4px; /* Increased letter spacing */
+    line-height: 1.2; /* Adjust line height for INTERNATIONAL */
+    margin: 0; /* Remove default paragraph margins */
+    text-transform: uppercase; /* Ensure all caps as per design */
+}
+
+/* Optional: Basic Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo-m img {
+        height: 40px;
+    }
+    .medianeg {
+        font-size: 20px;
+    }
+    .international {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        flex-direction: column; /* Stack M and text block on very small screens */
+        gap: 5px; /* Adjust spacing when stacked */
+    }
+    .logo-m img {
+        height: 35px;
+    }
+    .medianeg {
+        font-size: 18px;
+    }
+    .international {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .logo-text {
+        text-align: center; /* Center text when stacked vertically */
+    }
+}
+</style>

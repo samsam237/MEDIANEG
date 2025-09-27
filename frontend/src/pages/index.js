@@ -6,6 +6,7 @@ import HeroSection from '@/components/Hero/HeroSection';
 import ImageTextSection from '@/components/Sections/ImageTextSection';
 import ServicesSection from '@/components/Sections/ServicesSection';
 import SectorsSection from '@/components/Sections/SectorsSection';
+import GrowthSection from '@/components/Sections/GrowthSection';
 import WhyChooseUsSection from '@/components/Sections/WhyChooseUsSection';
 import ContactSection from '@/components/Sections/ContactSection';
 
@@ -14,28 +15,28 @@ const HomePage = () => {
 
   // Configuration pour les sections image/texte
   const whoWeAreFeatures = [
-    'Médiation commerciale internationale depuis 2008',
-    'Réseau de partenaires dans 50+ pays',
-    'Expertise sectorielle approfondie',
-    'Approche éthique et transparente'
+    t('homePage.whoWeAre.feature1'),
+    t('homePage.whoWeAre.feature2'),
+    t('homePage.whoWeAre.feature3'),
+    t('homePage.whoWeAre.feature4')
   ];
 
   const missionFeatures = [
     {
-      title: 'Neutralité',
-      description: 'Garantir une médiation impartiale entre toutes les parties'
+      title: t('homePage.mission.neutrality.title'),
+      description: t('homePage.mission.neutrality.description')
     },
     {
-      title: 'Expertise',
-      description: 'Connaissance approfondie des marchés africains et internationaux'
+      title: t('homePage.mission.expertise.title'),
+      description: t('homePage.mission.expertise.description')
     },
     {
-      title: 'Transparence',
-      description: 'Processus clairs et communication ouverte à chaque étape'
+      title: t('homePage.mission.transparency.title'),
+      description: t('homePage.mission.transparency.description')
     },
     {
-      title: 'Innovation',
-      description: 'Intégration des nouvelles technologies dans nos services'
+      title: t('homePage.mission.innovation.title'),
+      description: t('homePage.mission.innovation.description')
     }
   ];
 
@@ -54,21 +55,21 @@ const HomePage = () => {
       {/* Qui nous sommes / Mission */}
       <ImageTextSection
         imageSrc="/images/backgrounds/hero-business-meeting.jpg"
-        imageAlt="Équipe MEDIANEG en réunion de médiation"
-        subtitle="À propos de MEDIANEG"
-        title="Votre partenaire de confiance en médiation commerciale"
-        content="Depuis plus de 15 ans, MEDIANEG International facilite les échanges commerciaux entre l'Afrique et le monde. Notre expertise en médiation et négociation nous permet de créer des ponts durables entre les entreprises et les marchés internationaux."
+        imageAlt={t('homePage.whoWeAre.imageAlt')}
+        subtitle={t('homePage.whoWeAre.subtitle')}
+        title={t('homePage.whoWeAre.title')}
+        content={t('homePage.whoWeAre.content')}
         features={whoWeAreFeatures}
         bgColor="bg-white"
       />
 
       {/* Mission et Valeurs */}
       <ImageTextSection
-        imageSrc="/images/backgrounds/hero-mediation-handshake.jpg"
-        imageAlt="Handshake symbolisant la médiation et la coopération"
-        subtitle="Notre Mission"
-        title="Promouvoir la paix par le commerce"
-        content="Nous croyons que le commerce équitable et la médiation transparente sont les clés d'un développement durable et d'une paix durable. Notre mission est de faciliter ces échanges en créant de la valeur pour tous les acteurs."
+        imageSrc="/images/backgrounds/pexels-sarah-33270-122370.jpg"
+        imageAlt={t('homePage.mission.imageAlt')}
+        subtitle={t('homePage.mission.subtitle')}
+        title={t('homePage.mission.title')}
+        content={t('homePage.mission.content')}
         features={missionFeatures}
         reverse={true}
         bgColor="bg-gray-50"
@@ -80,49 +81,34 @@ const HomePage = () => {
       {/* Nos services */}
       <ServicesSection />
 
+      {/* Notre croissance */}
+      <GrowthSection />
+
       {/* Pourquoi nous choisir */}
       <WhyChooseUsSection />
 
-      {/* Témoignages avec image */}
-      <ImageTextSection
-        imageSrc="/images/backgrounds/hero-africa-business.jpg"
-        imageAlt="Partenaires et clients satisfaits de MEDIANEG"
-        subtitle="Témoignages"
-        title="Nos clients témoignent"
-        content="Découvrez comment MEDIANEG a transformé les projets commerciaux de nos clients et partenaires à travers le monde. Leurs succès sont notre plus grande récompense."
-        features={[
-          'Plus de 500 projets réussis',
-          'Clients dans 50+ pays',
-          '95% de taux de satisfaction',
-          'Partenariats durables établis'
-        ]}
-        bgColor="bg-white"
-      />
-
-      {/* Contact */}
-      <ContactSection />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-600">
         <div className="container-custom text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Prêt à transformer vos projets commerciaux ?
+            {t('homePage.cta.title')}
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Rejoignez les centaines d'entreprises qui font confiance à MEDIANEG pour leurs projets de médiation et négociation internationale.
+            {t('homePage.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="/contact" 
               className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center space-x-3 text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              <span>Démarrer un projet</span>
+              <span>{t('homePage.cta.button1')}</span>
             </a>
             <a 
               href="/presentation" 
               className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center space-x-3 text-lg"
             >
-              <span>En savoir plus</span>
+              <span>{t('homePage.cta.button2')}</span>
             </a>
           </div>
         </div>

@@ -12,12 +12,12 @@
     "learnMore": "Learn more",
     "getInTouch": "Get in touch",
     "overview": {
-      "global": "Global reach",
-      "globalDesc": "Connections between Africa and international markets",
+      "global": "International presence",
+      "globalDesc": "Present in over 30 countries with established sustainable partnerships",
       "trusted": "Trusted partner",
-      "trustedDesc": "Guaranteed neutral and professional expertise",
-      "growth": "Sustainable growth",
-      "growthDesc": "Solutions tailored to your commercial objectives"
+      "trustedDesc": "Guaranteed neutral and professional expertise with 95% success rate",
+      "growth": "Exponential growth",
+      "growthDesc": "Over 500 active projects in 20 countries in less than a year"
     }
   },
   "presentation": {
@@ -66,9 +66,16 @@
     "contactUs": "Contact us"
   },
   "services": {
+    "sectionTitle": "Our Services",
     "title": "Our services",
     "subtitle": "Complete and personalized solutions for your international commercial needs",
     "keyFeatures": "Key features",
+    "learnMore": "Learn more",
+    "cta": {
+      "title": "Need personalized support?",
+      "subtitle": "Contact us to discuss your specific needs and discover how we can help you.",
+      "button": "Contact us"
+    },
     "mediation": {
       "title": "Commercial Mediation",
       "description": "We facilitate the resolution of commercial conflicts and alignment of interests between partners. Our neutral expertise enables us to find win-win solutions in complex negotiations.",
@@ -96,13 +103,19 @@
     }
   },
   "sectors": {
+    "sectionTitle": "Business Sectors",
     "title": "Our business sectors",
     "subtitle": "Specialized in exchanges between Africa and the world",
     "agricultural": "Agricultural products",
     "rawMaterials": "Raw materials",
-    "manufactured": "Manufactured goods"
+    "manufactured": "Manufactured goods",
+    "approach": {
+      "title": "A cross-cutting approach",
+      "description": "Our expertise extends to all economic sectors, with an integrated approach that combines mediation, negotiation and economic intelligence to maximize your opportunities."
+    }
   },
   "whyChooseUs": {
+    "advantage": "Our Advantage",
     "title": "Why choose us?",
     "subtitle": "Our expertise at the service of your commercial projects",
     "expertise": {
@@ -120,6 +133,17 @@
     "support": {
       "title": "Personalized support",
       "description": "Availability and personalized follow-up of your projects"
+    },
+    "excellence": {
+      "title": "Recognized Excellence",
+      "description": "Exponential growth in less than a year with a 95% success rate"
+    },
+    "reactivity": {
+      "title": "Reactivity",
+      "description": "Support with local teams in each intervention region"
+    },
+    "stats": {
+      "successRate": "Success Rate"
     }
   },
   "cta": {
@@ -166,9 +190,13 @@
     "currentYearDescription": "This year, we are focusing our efforts on strengthening our network of commercial partners, expanding our mediation services and improving our negotiation processes to offer even more effective solutions to our international clients."
   },
   "contactPage": {
-    "availability": "Available 24/7",
+    "title": "Contact us",
+    "readyToStart": "Ready to start your project?",
+    "subtitle": "Our team of experts is at your disposal to support you in your international commercial mediation and negotiation projects.",
+    "availability": "Available Monday to Friday, 9 AM - 5 PM",
+    "emailDescription": "Response within 24h",
     "hours": "Hours",
-    "hoursWeekdays": "Mon - Fri: 9:00 AM - 6:00 PM",
+    "hoursWeekdays": "Mon - Fri: 9:00 AM - 5:00 PM",
     "hoursEmergency": "Emergencies: 24/7",
     "coordinatesTitle": "Our coordinates",
     "whyContactTitle": "Why contact us?",
@@ -178,11 +206,120 @@
       "negotiation": "• Commercial agreement negotiation",
       "products": "• African products sourcing",
       "logistics": "• Logistics and customs support",
-      "general": "• General questions about our services"
+      "general": "• General questions about our services",
+      "consultation": "Free consultation to evaluate your needs",
+      "quote": "Personalized quote within 48h",
+      "support": "Dedicated support throughout the project",
+      "technical": "Technical and commercial support included"
     },
+    "sendMessage": "Send us a message",
+    "formError": "An error occurred while sending. Please try again or contact us directly.",
+    "formDisabled": "Form disabled",
     "locationTitle": "Our location",
-    "locationSubtitle": "Located in the heart of Paris, we are easily accessible",
+    "locationSubtitle": "Located in the heart of Neuchâtel, we are easily accessible",
     "mapPlaceholder": "Interactive map (to be integrated with Google Maps or OpenStreetMap)"
+  },
+  "stats": {
+    "projectsInProgress": "+500 active projects",
+    "clientsInCountries": "Clients in 20 countries",
+    "countriesPresent": "Present in over 30 countries",
+    "sustainablePartners": "Established sustainable partnerships",
+    "founded": "Founded in 2025",
+    "rapidGrowth": "Exponential growth in less than a year",
+    "vision": "Vision"
+  },
+  "growth": {
+    "title": "Our exponential growth",
+    "subtitle": "Liberalization of agricultural markets and raw materials in CEMAC",
+    "cameroonFocus": "Strategic focus on Cameroon",
+    "guineaGulfPartner": "Dynamic partner of the Gulf of Guinea",
+    "cemacExpansion": "Rapid expansion in the CEMAC region",
+    "localStrength": "Our strength lies in our local expertise and sustainable partnerships",
+    "description": "Founded recently in 2025, MEDIANEG International has demonstrated rapid growth and exceptional market expansion. We focus on the liberalization of agricultural markets and raw materials in the Central African Economic and Monetary Community (CEMAC), with a particular focus on Cameroon.",
+    "achievements": {
+      "title": "Our achievements in one year",
+      "projects": "Over 500 active projects",
+      "countries": "Clients in 20 countries",
+      "cemac": "Strong presence in the CEMAC region",
+      "cameroon": "Reference partner in Cameroon"
+    }
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "Testimonials from our satisfied partners",
+    "martinLibam": {
+      "name": "Martin Libam",
+      "company": "Cameroonian Company",
+      "quote": "MEDIANEG has enabled us to establish sustainable partnerships with international suppliers. Their mediation expertise is exceptional."
+    },
+    "cameroonContact1": {
+      "name": "Cameroon Contact 1",
+      "company": "Local Producer",
+      "quote": "Thanks to MEDIANEG, we were able to export our products with very favorable commercial conditions."
+    },
+    "cameroonContact2": {
+      "name": "Cameroon Contact 2",
+      "company": "Agricultural Cooperative",
+      "quote": "Their support in negotiating our export contracts was decisive for our success."
+    }
+  },
+  "products": {
+    "cocoa": "Cocoa",
+    "coffee": "Coffee",
+    "oil": "Oil",
+    "agriculturalProducts": "Agricultural products",
+    "rawMaterials": "Raw materials",
+    "manufacturedGoods": "Manufactured goods"
+  },
+  "homePage": {
+    "whoWeAre": {
+      "imageAlt": "MEDIANEG team in mediation meeting",
+      "subtitle": "About MEDIANEG",
+      "title": "Your trusted partner in commercial mediation",
+      "content": "Founded in 2025, MEDIANEG International facilitates commercial exchanges between Africa and the world. Our expertise in mediation and negotiation allows us to create lasting bridges between companies and international markets.",
+      "feature1": "International commercial mediation since 2025",
+      "feature2": "Partner network in 30+ countries",
+      "feature3": "In-depth sectoral expertise",
+      "feature4": "Ethical and transparent approach"
+    },
+    "mission": {
+      "imageAlt": "Handshake symbolizing mediation and cooperation",
+      "subtitle": "Our Mission",
+      "title": "Promoting peace through trade",
+      "content": "We believe that fair trade and transparent mediation are the keys to sustainable development and lasting peace. Our mission is to facilitate these exchanges by creating value for all stakeholders.",
+      "neutrality": {
+        "title": "Neutrality",
+        "description": "Guaranteeing impartial mediation between all parties"
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Deep knowledge of African and international markets"
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Clear processes and open communication at every step"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Integration of new technologies into our services"
+      }
+    },
+    "testimonials": {
+      "imageAlt": "MEDIANEG satisfied partners and clients",
+      "subtitle": "Testimonials",
+      "title": "Our clients testify",
+      "content": "Discover how MEDIANEG has transformed the commercial projects of our clients and partners around the world. Their success is our greatest reward.",
+      "feature1": "Over 500 active projects",
+      "feature2": "Clients in 20 countries",
+      "feature3": "95% satisfaction rate",
+      "feature4": "Established sustainable partnerships"
+    },
+    "cta": {
+      "title": "Ready to transform your commercial projects?",
+      "subtitle": "Join the hundreds of companies that trust MEDIANEG for their international mediation and negotiation projects.",
+      "button1": "Start a project",
+      "button2": "Learn more"
+    }
   },
   "quickLinks": "Quick links",
   "placeholders": {

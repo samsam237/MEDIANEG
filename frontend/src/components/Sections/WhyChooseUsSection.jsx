@@ -40,14 +40,14 @@ const WhyChooseUsSection = () => {
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: 'Excellence Reconnue',
-      description: 'Plus de 15 ans d\'expérience dans la médiation commerciale internationale avec un taux de réussite de 95%',
+      title: t('whyChooseUs.excellence.title'),
+      description: t('whyChooseUs.excellence.description'),
       color: 'secondary'
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      title: 'Réactivité',
-      description: 'Accompagnement 24/7 avec des équipes locales dans chaque région d\'intervention',
+      title: t('whyChooseUs.reactivity.title'),
+      description: t('whyChooseUs.reactivity.description'),
       color: 'accent'
     }
   ];
@@ -55,22 +55,22 @@ const WhyChooseUsSection = () => {
   const stats = [
     {
       number: '500+',
-      label: 'Projets Accomplis',
+      label: t('stats.projectsInProgress'),
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
-      number: '50+',
-      label: 'Pays Partenaires',
+      number: '20+',
+      label: t('stats.clientsInCountries'),
       icon: <Globe className="w-6 h-6" />
     },
     {
       number: '95%',
-      label: 'Taux de Réussite',
+      label: t('whyChooseUs.stats.successRate'),
       icon: <Award className="w-6 h-6" />
     },
     {
-      number: '15+',
-      label: 'Années d\'Expérience',
+      number: '1+',
+      label: t('stats.rapidGrowth'),
       icon: <Heart className="w-6 h-6" />
     }
   ];
@@ -104,7 +104,7 @@ const WhyChooseUsSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <p className="text-primary-600 font-semibold text-lg uppercase tracking-wide mb-4" data-aos="fade-up">
-            Notre Avantage
+            {t('whyChooseUs.advantage')}
           </p>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-delay="200">
             {t('whyChooseUs.title')}
@@ -170,10 +170,10 @@ const WhyChooseUsSection = () => {
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Ce que disent nos clients
+                {t('testimonials.title')}
               </h3>
               <p className="text-gray-600">
-                Découvrez les témoignages de nos partenaires et clients satisfaits
+                {t('testimonials.subtitle')}
               </p>
             </div>
             
@@ -181,23 +181,21 @@ const WhyChooseUsSection = () => {
               <div className="text-center" data-aos="fade-right" data-aos-delay="1800">
                 <div className="bg-primary-50 rounded-xl p-6 mb-4 hover:bg-primary-100 transition-colors duration-300">
                   <p className="text-gray-700 italic leading-relaxed">
-                    "MEDIANEG nous a permis d'établir des partenariats durables avec des fournisseurs africains. 
-                    Leur expertise en médiation est exceptionnelle."
+                    "{t('testimonials.martinLibam.quote')}"
                   </p>
                 </div>
-                <div className="font-semibold text-gray-900">Jean-Pierre Martin</div>
-                <div className="text-sm text-gray-600">CEO, AgroTech Europe</div>
+                <div className="font-semibold text-gray-900">{t('testimonials.martinLibam.name')}</div>
+                <div className="text-sm text-gray-600">{t('testimonials.martinLibam.company')}</div>
               </div>
               
               <div className="text-center" data-aos="fade-left" data-aos-delay="2000">
                 <div className="bg-secondary-50 rounded-xl p-6 mb-4 hover:bg-secondary-100 transition-colors duration-300">
                   <p className="text-gray-700 italic leading-relaxed">
-                    "Grâce à MEDIANEG, nous avons pu exporter nos produits vers l'Europe avec des conditions 
-                    commerciales très favorables."
+                    "{t('testimonials.cameroonContact1.quote')}"
                   </p>
                 </div>
-                <div className="font-semibold text-gray-900">Aïcha Diallo</div>
-                <div className="text-sm text-gray-600">Directrice, Coopérative Agricole Sénégal</div>
+                <div className="font-semibold text-gray-900">{t('testimonials.cameroonContact1.name')}</div>
+                <div className="text-sm text-gray-600">{t('testimonials.cameroonContact1.company')}</div>
               </div>
             </div>
           </div>

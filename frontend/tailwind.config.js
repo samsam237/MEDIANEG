@@ -64,6 +64,17 @@ module.exports = {
           900: '#111827',
           950: '#030712',
         },
+        // Couleurs cacao et café pour l'identité MEDIANEG
+        cocoa: {
+          50: '#faf8f6', 100: '#f5f1ed', 200: '#e8ddd3', 300: '#d9c7b5', 400: '#c9a98b',
+          500: '#b8936b', 600: '#a67c4a', 700: '#8b6638', 800: '#6b4f31', 900: '#4b3621',
+          950: '#2d1f13',
+        },
+        coffee: {
+          50: '#faf8f6', 100: '#f3efea', 200: '#e6ddd1', 300: '#d4c4b0', 400: '#bea489',
+          500: '#a68c6b', 600: '#8f754f', 700: '#756040', 800: '#5c4a32', 900: '#4b3621',
+          950: '#2a1e14',
+        },
       },
       fontFamily: {
         sans: ['Roboto', 'Lato', 'system-ui', 'sans-serif'],
