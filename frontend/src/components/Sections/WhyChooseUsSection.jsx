@@ -166,7 +166,7 @@ const WhyChooseUsSection = () => {
         </div>
 
         {/* Testimonials Preview */}
-        {<div className="mt-16" data-aos="fade-up" data-aos-delay="1600">
+        {/*<div className="mt-16" data-aos="fade-up" data-aos-delay="1600">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -199,7 +199,7 @@ const WhyChooseUsSection = () => {
               </div>
             </div>
           </div>
-        </div>}
+        </div>-->*/}
       </div>
     </section>
   );
